@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TaskTodoList from './components/TaskTodo/TaskTodoList/TaskTodoList';
 import TaskInput from './components/TaskTodo/TaskInput/TaskInput'
+import './App.css'
 const App = () => {
   const [taskLists, setTaskList] = useState([
     { text: 'Do all exercises!', id: 'g1' },
@@ -30,8 +31,8 @@ const App = () => {
 
   return (
     <div>
-      <section id="tasks-form">
-        <TaskInput onAddGoal={addTaskHandler} />
+      <section id="task-form">
+        <TaskInput onAddTask={addTaskHandler} />
       </section>
       <section id="tasks">
         {content}
