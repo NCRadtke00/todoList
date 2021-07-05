@@ -5,7 +5,10 @@ import './App.css'
 const App = () => {
   const [taskLists, setTaskList] = useState([
     { text: 'Do all exercises!', id: 'g1' },
-    { text: 'Finish the course!', id: 'g2' }
+    { text: 'Finish the course!', id: 'g2' },
+    { text: 'Graduate!', id: 'g3' },
+    { text: 'Find a good job!', id: 'g4' }
+
   ]);
   const addTaskHandler = enteredText => {
     setTaskList(prevTasks => {

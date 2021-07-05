@@ -10,6 +10,7 @@ const FormControl = styled.div`
   display: block;
   margin-bottom: 0.5rem;
   color: ${props => props.invalid ? "red" : 'black'};
+  text-align: center;
 }
 & input {
   display: block;
@@ -49,7 +50,7 @@ const TaskInput = props => {
     return (
         <form onSubmit={formSubmitHandler}>
             <FormControl invalid={!isValid}>
-                <label>Todo list</label>
+                <label>Tasks todo list</label>
                 <input type="text" onChange={taskInputChangeHandler} />
             </FormControl>
             <Button type="submit">Add Task</Button>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const TaskItem = styled.li`
   margin: 1rem 0;
-  background: #8b005d;
+  background: #3b0542;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   color: white;
   padding: 1rem 2rem;
