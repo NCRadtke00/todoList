@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
 import TaskTodoList from './components/TaskTodo/TaskTodoList/TaskTodoList';
 import TaskInput from './components/TaskTodo/TaskInput/TaskInput'
-import './App.css'
+import styled from 'styled-components'
+const TasksSection = styled.section`
+  width: 35rem;
+    max-width: 90%;
+    margin: 3rem auto;
+`;
+const TasksFormSection = styled.section`
+  width: 30rem;
+    max-width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(80, 79, 79, 0.2);
+    border-radius: 10px;
+`;
+
 const App = () => {
   const [taskLists, setTaskList] = useState([
     { text: 'Do all exercises!', id: 'g1' },
@@ -34,13 +48,13 @@ const App = () => {
 
   return (
     <div>
-      <section id="task-form">
+      <TasksFormSection>
         <TaskInput onAddTask={addTaskHandler} />
-      </section>
-      <section id="tasks">
+      </TasksFormSection>
+      <TasksSection>
         {content}
   
-      </section>
+      </TasksSection>
     </div>
   );
 }
