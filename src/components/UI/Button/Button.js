@@ -11,7 +11,6 @@ box-shadow: 00 4px rgba(0,0,0,0.26);
 cursor: pointer;
 @media(min-width: 768px) {
     width:auto;
-    align: center;
 }
 &:focus{
     outline:none;
